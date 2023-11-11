@@ -12,7 +12,6 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-
 @Transactional(readOnly = true)
 public class TodoService {
     private final TodoJpaRepository todoRepository;
@@ -32,7 +31,6 @@ public class TodoService {
         return todoRepository.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
-
 
     @Transactional
     public void updateTodo(TodoEntity todo, String title, Boolean completed) {

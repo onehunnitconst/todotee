@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/memo")
+@RequestMapping("/memos")
 @RequiredArgsConstructor
 public class TodoMemoController {
 
